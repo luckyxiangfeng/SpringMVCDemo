@@ -21,7 +21,7 @@ public class HomeController {
     //支持HTTP协议所有方法，@ResoinseBody = 响应此“方法”返回值为页面内容。参数键为"para"，默认para默认值为"this is body"  
     @ResponseBody  
     @RequestMapping(value = "getshow")  
-    public String responseBody(@RequestParam(value = "para", defaultValue = "您好，没有jsp文件哦!", required = false) String content) {  
+    public String responseBody(@RequestParam(value = "para", defaultValue = "this is body content", required = false) String content) {  
         return content;  
     }  
       
